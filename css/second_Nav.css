@@ -1,0 +1,238 @@
+@media only screen and (min-width: 865px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .Second-Nav{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1rem;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+    }
+    .Second-Nav > img{
+        height: 100%;
+    }
+    /* open nav button OFF */
+    .btn-openNav{
+        border: none;
+        outline: none;
+        background-color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 45px 10px 15px;
+        cursor: pointer;
+        position: relative;
+        z-index: 30;
+    }
+    .btn-openNav::before{
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: calc(100% - 35px);
+        background-color: #fff;
+        height: 2px;
+        width: 20px;
+        transition: top 0.3s, transform 0.3s, width 0.3s;
+    }
+    .btn-openNav::after{
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: calc(100% - 35px);
+        background-color: #fff;
+        height: 2px;
+        width: 10px;
+        transition: top 0.3s, transform 0.3s, width 0.3s;
+    }
+    /* open nav button ON */
+    .btn-openNav_on{
+        border: none;
+        outline: none;
+        background-color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 45px 10px 15px;
+        cursor: pointer;
+        position: relative;
+        z-index: 30;
+    }
+    .btn-openNav_on::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% - 35px);
+        background-color: #fff;
+        height: 2px;
+        width: 15px;
+        transform-origin: 50% 50%;
+        transform: rotate(45deg);
+        transition: top 0.3s, transform 0.3s, width 0.3s;
+    }
+    .btn-openNav_on::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% - 35px);
+        background-color: #fff;
+        height: 2px;
+        width: 15px;
+        transform-origin: 50% 50%;
+        transform: rotate(-45deg);
+        transition: top 0.3s, transform 0.3s, width 0.3s;
+    }
+    /* ============================================ */
+    .Second-Nav ul{
+        list-style: none;
+        position: fixed;
+        top: 0px;
+        left: 100%;
+        padding: 80px 0px 15px 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #000;
+        width: 50%;
+        height: 100vh;
+        min-height: 450px;
+        overflow: hidden;
+        transition: left 0.2s;
+    }
+    .Second-Nav ul li{
+        width: 100%;
+    }
+    .Second-Nav .normal_links{
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+    }
+    /* list order */
+    .Second-Nav ul li:nth-child(1){
+        order: 1;
+    }
+    .Second-Nav ul li:nth-child(2){
+        order: 2;
+    }
+    .Second-Nav ul li:nth-child(3){
+        order: 3;
+    }
+    .Second-Nav ul li:nth-child(4){
+        order: 4;
+    }
+    .Second-Nav ul li:nth-child(5){
+        order: 5;
+    }
+    .Second-Nav ul li:nth-child(6){
+        order: 7; /* change to 7th position */
+    }
+    .Second-Nav ul li:nth-child(7){
+        order: 6; /* change to 6th position */
+    }
+    .Second-Nav ul li:nth-child(8){
+        order: 8;
+    }
+    /* nav extras */
+    .Second-Nav li > input[type="checkbox"]{
+        display: none;
+    }
+    .Second-Nav li > label{
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+        padding: 0px 2.3rem;
+        position: relative;
+        cursor: pointer;
+    }
+    .Second-Nav li > label::before{
+        content: "EN";
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .Second-Nav li > label::after{
+        content: "ES";
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: calc(100% - 2rem);
+    }
+    .Second-Nav li > button{
+        border: none;
+        outline: none;
+        background-color: #000;
+        cursor: pointer;
+    }
+    .Second-Nav li button > svg{
+        height: 2.5rem;
+        width: 2.5rem;
+        filter: invert(1);
+    }
+    .Second-Nav .li_extras{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5%;
+    }
+    .Second-Nav .li_extras > a{
+        text-decoration: none;
+        background-color: #58a3a3;
+        width: 100%;
+        color: #000;
+        font-size: 0.9rem;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .Second-Nav .li_extras a > svg{
+        margin-left: 10px;
+        width: 2rem;
+        height: 2rem;
+    }
+    /* li extras (second row) */
+    .Second-Nav .li_extras > div{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Second-Nav .li_extras div > a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+    }
+    .Second-Nav .li_extras div > span{
+        display: flex;
+        gap: 1rem;
+    }
+    .Second-Nav .li_extras div span > svg{
+        width: 2rem;
+        height: 2rem;
+    }
+}

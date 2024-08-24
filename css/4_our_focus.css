@@ -1,0 +1,56 @@
+/* our focus section */
+.our-focus{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #50dada;
+}
+@media only screen and (max-width: 864px){
+    .our-focus div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .our-focus div > p{
+        font-size: 0.8rem;
+    }
+    .our-focus div > h3{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (min-width: 865px){
+    .our-focus div{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .our-focus div > p{
+        font-size: 1rem;
+    }
+    .our-focus div > h3{
+        font-size: 1rem;
+    }
+}
+.our-focus div > img{
+    width: 100%;
+}
+.our-focus div > h3{
+    width: 100%;
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    color: #363636;
+    padding: 0px 2rem;
+    font-weight: bold;
+}
+.our-focus div > p{
+    width: 100%;
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    color: #363636;
+    padding: 0px 2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+/* repository */
+.repository{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+.repository > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.repository div > h3{
+    color: #000;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+.repository div > span{
+    color: #000;
+    font-size: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+.repository > ul{
+    list-style: none;
+    padding-top: 2rem;
+    width: 100%;
+}
+.repository ul > li{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+.repository ul li > a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+.repository_link1:hover{
+    background-image: url(../img/our_focus.webp);
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
+.repository_link2:hover{
+    background-image: url(../img/header_7.webp);
+    background-size: 100% auto;
+    background-position: 50% 20%;
+}
+.repository_link3:hover{
+    background-image: url(../img/header_1.webp);
+    background-size: 100% auto;
+    color: #fff;
+}
+.repository_link4:hover{
+    background-image: url(../img/header_6.webp);
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
+.repository ul li a > svg{
+    width: 1.5rem;
+}

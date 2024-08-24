@@ -1,0 +1,21 @@
+/* about section */
+@media only screen and (max-width: 864px){
+    .about{
+        width: 100%;
+        padding: 3rem;
+        background-color: #f04e32;
+        font-family: "Open Sans", sans-serif;
+        color: #000;
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (min-width: 865px){
+    .about{
+        width: 100%;
+        padding: 8rem 3rem;
+        background-color: #f04e32;
+        font-family: "Open Sans", sans-serif;
+        color: #000;
+        font-size: 2.5rem;
+    }
+}

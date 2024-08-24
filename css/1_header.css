@@ -1,0 +1,40 @@
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+body{
+    padding-top: 80px;
+}
+/* header */
+.pageHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 864px){
+    .pageHeader__title{
+        color: #000;
+        font-size: 5rem;
+        font-family: "Open Sans", sans-serif;
+    }
+}
+@media only screen and (min-width: 865px){
+    .pageHeader__title{
+        color: #000;
+        font-size: 9rem;
+        font-family: "Open Sans", sans-serif;
+    }
+}
+.pageHeader__text{
+    color: #000;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-align: start;
+    max-width: 1000px;
+    padding: 1rem 1.5rem;
+}
+.pageHeader__text span{
+    background-color: #50dada;
+}
